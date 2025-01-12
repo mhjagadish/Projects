@@ -1,0 +1,178 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gathr</title>
+  <style>
+    body {
+      margin: 0; /* Reset default margin */
+      padding: 0; /* Reset default padding */
+      /* display: flex; */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      height: 100vh; /* Make the body full height of viewport */
+      background-image: url('iiiii.jpg'); /* Set background image */
+       background-size: cover; /*Cover the entire viewport */
+       background-color: rgba(88, 27, 27, 0.3);
+       
+      }
+
+    .container {
+      display: flex;
+        background-color: rgba(255, 255, 255, 0.3); 
+      padding: 30px;
+      border-radius: 10px;
+      /* height: 100%; */
+     
+         
+    }
+
+.login{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 60px;
+} 
+ #signin{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 60px;
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid black;
+      box-sizing: border-box; /* Ensure padding and border are included in element's total width */
+    }
+    select{
+      width: 30%;
+      padding: 10px;
+      margin: 5px 0;
+      
+      border: 1px solid black;
+      box-sizing: border-box;
+
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #059736; /* Blue color for submit button */
+      color: #fff; /* White text color */
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3; /* Darker blue color on hover */
+    }
+
+    .word{
+      margin-left: 200px;
+      margin-right: 100px;
+      margin-top: 100px;
+       color: #fff;
+      
+    } 
+    header{
+      width: 100%;
+      height: 50px;
+      background-color:transparent;
+    }
+
+    .card{
+      display: flex;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    
+  </header>
+
+<div class="container">
+  <div class="word"><h1>Welcome to Gathr</h1>
+  <p>Create, collect and share what you love. Gathr<br>
+     lets you discover and post text, pictures, videos<br> 
+     and more! Sign up today</p>
+</div>
+
+
+<div class="card"> 
+<div class="login">
+  <div class="card-front">
+    <h1>Login</h1>
+    <input type="email" placeholder="Enter Your Email"><br>
+    <input type="password" placeholder="Password"><br>
+    <input type="submit" value="Sign in"><br>
+      <p>Don't have an account? <a href="#" onclick="flipCard()">Register</a></p>
+    </div>
+
+</div>
+
+<div id="signin">
+<div class="card-back">
+  <h1>Register</h1>
+  <input type="text" placeholder="Full Name"><br>
+<input type="email" placeholder="Email"><br>
+<input type="password" placeholder="Password"><br>
+<select>
+  <option value="Day">Day</option>
+  <option value="First chice">First Choice</option>
+  <option value="Second choice">Second Choice</option>  
+</select>
+<select>
+  <option value="Month">Month</option>
+  <option value="First chice">First Choice</option>
+  <option value="Second choice">Second Choice</option>  
+</select>
+<select>
+  <option value="year">Year</option>
+  <option value="First chice">First Choice</option>
+  <option value="Second choice">Second Choice</option>  
+</select>
+
+<input type="submit" value="Sign up for Gathr"><br>
+<!-- <p>Already have an account? <a href="#" onclick="flipCard()">Login</a></p> -->
+</div>
+
+</div></div></div>
+  
+<script>
+ /* function flipCard() {
+    const card = document.querySelector('.login');
+    card.classList.toggle('flip');
+  } */
+
+ var x= document.getElementById("signin").value;
+ var y=document.getElementsByClassName("login").value;
+
+ function login(){
+ }
+ function register(){
+
+ }
+
+
+  </script>
+
+
+</body>
+</html>
